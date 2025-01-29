@@ -9,6 +9,8 @@ export const Images = {
     "https://images.unsplash.com/photo-1578658503040-8d375c771a37?q=80&w=1926&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   imageFour:
     "https://media.istockphoto.com/id/1408816132/photo/beautiful-thimphu.jpg?s=612x612&w=0&k=20&c=oB06KJSnBOSK9IRchxgJJlE5wGyVkqUFqPEvJPYp_D0=",
+  imageFive:
+    "https://plus.unsplash.com/premium_photo-1692976235042-32bc7f884c79?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Ymh1dGFufGVufDB8fDB8fHww",
 };
 
 export const CarouselImages = [

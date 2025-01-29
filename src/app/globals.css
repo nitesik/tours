@@ -105,3 +105,13 @@ body {
     -webkit-text-stroke: 3px black;
 
 }
+
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: hsl(var(--primary));
+}
+
+::selection {
+    color: white;
+    background: hsl(var(--primary));
+}
