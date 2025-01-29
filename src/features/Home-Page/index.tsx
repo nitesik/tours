@@ -14,7 +14,7 @@ import { stepsToPerform } from "@/lib/siteConfigs";
 import { Input } from "@/components/ui/input";
 
 const options = {
-  threshold: 0.75,
+  threshold: 0.35,
   root: null,
   // rootMargin: "50px",
 } satisfies IntersectionObserverInit;
