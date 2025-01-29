@@ -118,9 +118,10 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <section id={"2"} className="capture py-14 h-fit mx-5">
+      <section className=" py-14 h-fit mx-5">
         <div
-          className={`w-full 2xl:max-w-[1500px] mx-auto flex flex-col gap-5 transition-all duration-500 ${
+          id={"2"}
+          className={`capture w-full 2xl:max-w-[1500px] mx-auto flex flex-col gap-5 transition-all duration-500 ${
             id.includes("2")
               ? "opacity-100" + " translate-y-0"
               : "opacity-0 translate-y-[35px]"
@@ -296,9 +297,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id={"6"} className="h-fit flex bg-muted capture py-14">
+      <section className="h-fit flex bg-muted  py-14">
         <div className="customDiv" />
-        <div className="flex-1 pl-5 grid md:grid-cols-2 gap-5 overflow-x-hidden">
+        <div
+          id={"6"}
+          className="flex-1 capture pl-5 grid md:grid-cols-2 gap-5 overflow-x-hidden"
+        >
           <div className=" flex flex-col gap-5 justify-center">
             <h3 className="font-bebas font-semibold text-2xl">OUR APPROACH</h3>
             <h1 className="font-bebas font-bold text-[60px]">
