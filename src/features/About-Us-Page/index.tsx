@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button";
 import { Images } from "@/lib/images";
 import ContactForm from "@/components/contactForm";
 import { jumpToContact } from "@/lib/siteConfigs";
-import Head from "next/head";
 
 const options = {
   threshold: 0.35,
