@@ -78,7 +78,7 @@ export default function AboutUsPage() {
           >
             <div className="font-bebas grid gap-5 text-black bg-white p-7 rounded">
               <h1 className=" text-3xl">
-                OUR <span className="text-primary">VISION</span>
+                OUR <span className="text-primary">MISSION</span>
               </h1>
               <p className="text-2xl">
                 At Wings to Himalayan Kingdom Tours and Treks, our mission is to
