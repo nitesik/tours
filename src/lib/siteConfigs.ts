@@ -1,23 +1,40 @@
 import * as Lucid from "lucide-react";
 
-export const stepsToPerform = [
+export const services = [
   {
-    Icon: Lucid.PhoneIcon,
-    title: "Initial Consultation",
+    Icon: Lucid.BinocularsIcon,
+    title: "Cultural Tours",
     description:
-      "Our approach begins with a direct conversation. Speaking by phone or meeting in person allows us to explore your travel goals, interests, dates, and other considerations on a deeper level.",
+      "Explore Bhutan’s ancient temples, forts, and monasteries, and experience firsthand its rich heritage. Visit Thimphu, the capital city, or marvel at the beauty of the Paro Valley.",
   },
   {
-    Icon: Lucid.MonitorIcon,
-    title: "Preparing for Departure",
+    Icon: Lucid.BirdIcon,
+    title: "Adventure & Trekking",
     description:
-      "We handle all the necessary pre-departure details, including health guidelines, visa application instructions, luggage recommendations, and other essential information to keep your preparations clear and straightforward.\n" +
-      "\n",
+      "For the adventurous at heart, embark on one of Bhutan’s many trekking routes, such as the challenging Jomolhari Trek or the scenic Druk Path Trek.",
   },
   {
-    Icon: Lucid.PlaneIcon,
-    title: "During your Journey",
+    Icon: Lucid.FlowerIcon,
+    title: "Spiritual Journeys",
     description:
-      "Once your journey is underway, we remain on hand to ensure every detail proceeds as planned. Our teams will welcome you at the airport and we will ensure that accommodations, guides, and drivers are informed of any special requests , interests or occasions. Should any matter require attention, we are available at all hours to assist promptly.",
+      "Bhutan is known as the last great Himalayan kingdom of happiness, where the Buddhist culture is deeply woven into daily life. We offer spiritual tours, including visits to meditation retreats, monasteries, and sacred sites",
+  },
+  {
+    Icon: Lucid.LandPlotIcon,
+    title: "Spiritual Journeys",
+    description:
+      "Bhutan is home to vibrant and colorful festivals like the Paro Tsechu, Thimphu Tsechu and Black Naked Crane. These events are an incredible way to experience Bhutanese culture through traditional dances, music, and rituals.",
+  },
+  {
+    Icon: Lucid.HeaterIcon,
+    title: "Luxury & Comfort",
+    description:
+      "Whether you are looking for a luxury resort stay or a more intimate guesthouse experience, we offer a range of accommodations to suit your preferences and budget.\n",
   },
 ];
+
+export const jumpToContact = () => {
+  document
+    .querySelector("#contact")
+    ?.scrollIntoView({ behavior: "smooth", block: "start" });
+};

@@ -4,13 +4,13 @@ export const Images = {
   imageOne:
     "https://images.unsplash.com/photo-1580649851649-992b28f56e98?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   imageTwo:
-    "https://images.unsplash.com/photo-1617469165885-0db8294c3232?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://res.cloudinary.com/dqlrcrire/image/upload/v1738559291/IMG_0041_esew3a.jpg",
   imageThree:
-    "https://images.unsplash.com/photo-1578658503040-8d375c771a37?q=80&w=1926&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://res.cloudinary.com/dqlrcrire/image/upload/v1738559297/IMG_0164_iwfufu.jpg",
   imageFour:
-    "https://media.istockphoto.com/id/1408816132/photo/beautiful-thimphu.jpg?s=612x612&w=0&k=20&c=oB06KJSnBOSK9IRchxgJJlE5wGyVkqUFqPEvJPYp_D0=",
+    "https://res.cloudinary.com/dqlrcrire/image/upload/v1738559299/IMG_0081_dd6ogf.jpg",
   imageFive:
-    "https://plus.unsplash.com/premium_photo-1692976235042-32bc7f884c79?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Ymh1dGFufGVufDB8fDB8fHww",
+    "https://res.cloudinary.com/dqlrcrire/image/upload/v1738559303/IMG_0151-3_y9lacc.jpg",
 };
 
 export const CarouselImages = [
