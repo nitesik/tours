@@ -13,7 +13,7 @@ export default function Page() {
       <Head>
         <title>Hello</title>
       </Head>
-      <AboutUsPage />;
+      <AboutUsPage />
     </>
   );
 }
