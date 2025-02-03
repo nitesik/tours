@@ -21,7 +21,7 @@ export const services = [
   },
   {
     Icon: Lucid.LandPlotIcon,
-    title: "Spiritual Journeys",
+    title: "Festivals & Events",
     description:
       "Bhutan is home to vibrant and colorful festivals like the Paro Tsechu, Thimphu Tsechu and Black Naked Crane. These events are an incredible way to experience Bhutanese culture through traditional dances, music, and rituals.",
   },

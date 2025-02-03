@@ -12,6 +12,7 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import { jumpToContact, services } from "@/lib/siteConfigs";
 import ContactForm from "@/components/contactForm";
+import Link from "next/link";
 
 const options = {
   threshold: 0.35,
@@ -133,7 +134,9 @@ export default function HomePage() {
                 promoting cultural preservation and responsible travel.
               </li>
             </ul>
-            <Button className="py-6 w-fit px-7">CONTACT US</Button>
+            <Button onClick={jumpToContact} className="py-6 w-fit px-7">
+              CONTACT US
+            </Button>
           </div>
         </div>
       </section>
@@ -315,7 +318,9 @@ export default function HomePage() {
               authentic and impactful Bhutanese experiences that truly connect
               with our clients.
             </p>
-            <Button>ABOUT US</Button>
+            <Button>
+              <Link href={"/about-us"}>ABOUT US</Link>
+            </Button>
           </span>
           <div>
             <img
