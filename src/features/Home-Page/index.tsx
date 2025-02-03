@@ -11,7 +11,6 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { jumpToContact, services } from "@/lib/siteConfigs";
-import { Input } from "@/components/ui/input";
 import ContactForm from "@/components/contactForm";
 
 const options = {
