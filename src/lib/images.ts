@@ -2,7 +2,7 @@ export const Images = {
   backgroundImg:
     "https://images.unsplash.com/photo-1566020586758-23d5e0ff7a64?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   imageOne:
-    "https://images.unsplash.com/photo-1580649851649-992b28f56e98?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://res.cloudinary.com/dqlrcrire/image/upload/v1738640481/IMG_0207_xcq7vy.jpg",
   imageTwo:
     "https://res.cloudinary.com/dqlrcrire/image/upload/v1738559291/IMG_0041_esew3a.jpg",
   imageThree:
@@ -20,17 +20,17 @@ export const CarouselImages = [
     description: "",
   },
   {
-    url: "https://plus.unsplash.com/premium_photo-1697730342301-c55434fbc3c9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDl8fGJodXRhbnxlbnwwfHwwfHx8MA%3D%3D",
+    url: "https://res.cloudinary.com/dqlrcrire/image/upload/v1738640482/IMG_0245_dfj7ub.jpg",
     title: "",
     description: "",
   },
   {
-    url: "https://images.unsplash.com/photo-1606681246594-372e9e133ac1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fGJodXRhbnxlbnwwfHwwfHx8MA%3D%3D",
+    url: "https://res.cloudinary.com/dqlrcrire/image/upload/v1738640486/IMG_0212_dd2ghm.jpg",
     title: "",
     description: "",
   },
   {
-    url: "https://images.unsplash.com/photo-1618082645022-3cc161a6bdf4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fGJodXRhbnxlbnwwfHwwfHx8MA%3D%3D",
+    url: "https://res.cloudinary.com/dqlrcrire/image/upload/v1738640482/IMG_0245_dfj7ub.jpg",
     title: "",
     description: "",
   },

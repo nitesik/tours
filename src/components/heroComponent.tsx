@@ -27,7 +27,7 @@ export default function HeroComponent({ id }: { id: string[] }) {
           <br /> Thunder Dragon
           {/*<span className="text-white">JOURNEYS TO</span> <br /> BHUTAN*/}
         </h1>
-        <h5 className="w-full font-bebas lg:w-1/2 font-bold text-2xl text-white">
+        <h5 className="w-full font-sans lg:w-1/2 font-bold text-2xl text-white">
           At Wings to Himalayan Kingdom, we are your trusted travel partner,
           offering personalized tours to one of the most enchanting and mystical
           destinations in the world – Bhutan. Known for its breathtaking
