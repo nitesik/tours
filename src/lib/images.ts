@@ -25,15 +25,16 @@ export const CarouselImages = [
     description: "",
   },
   {
-    url: "https://res.cloudinary.com/dqlrcrire/image/upload/v1738640486/IMG_0212_dd2ghm.jpg",
+    url: "https://images.unsplash.com/photo-1580649851649-992b28f56e98?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "",
     description: "",
   },
   {
-    url: "https://res.cloudinary.com/dqlrcrire/image/upload/v1738640482/IMG_0245_dfj7ub.jpg",
+    url: "https://res.cloudinary.com/dqlrcrire/image/upload/v1738640481/IMG_E0279_xti2qx.jpg",
     title: "",
     description: "",
   },
+
   {
     url: "https://images.unsplash.com/photo-1606239763574-c53f4fe09af9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fGJodXRhbnxlbnwwfHwwfHx8MA%3D%3D",
     title: "",

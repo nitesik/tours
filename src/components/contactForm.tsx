@@ -34,6 +34,8 @@ const schema = z.object({
     .number()
     .min(1)
     .transform((x) => x.toString()),
+  date: z.string().min(1, { message: "Field is required" }),
+  budgetPerPerson: z.string().min(1, { message: "Field is required" }),
 });
 
 export default function ContactForm() {
@@ -75,6 +77,8 @@ export default function ContactForm() {
       numberOfPeople: "",
       fromAge: "",
       toAge: "",
+      date: "",
+      budgetPerPerson: "",
     },
   });
 
@@ -93,8 +97,8 @@ export default function ContactForm() {
           onSubmit={handleSubmit(onSubmit)}
           className="mx-auto w-full lg:w-[800px] gap-8 flex flex-col items-center"
         >
-          <h1 className="text-[50px] font-rye text-primary">Contact Us!</h1>
-          <div className="grid lg:grid-cols-2 gap-5 font-rye w-full [&>label>input]:rounded-none [&>*>h4]:text-primary [&>*>h4]:font-semibold [&>*>h4]:text-lg ">
+          <h1 className="text-[50px] font-bebas text-primary">Contact Us!</h1>
+          <div className="grid lg:grid-cols-2 gap-5 font-sans w-full [&>label>input]:rounded-none [&>*>h4]:text-primary [&>*>h4]:font-semibold [&>*>h4]:text-lg ">
             <label className="flex flex-col gap-2">
               <h4>Name:</h4>
               <Input {...register("name")} />
@@ -126,10 +130,22 @@ export default function ContactForm() {
                 <ErrorLabel>{errors.numberOfPeople.message}</ErrorLabel>
               )}
             </label>
+            <label className="flex flex-col gap-2">
+              <h4>Budget Per Person:</h4>
+              <Input {...register("budgetPerPerson")} />
+              {errors.budgetPerPerson && (
+                <ErrorLabel>{errors.budgetPerPerson.message}</ErrorLabel>
+              )}
+            </label>
+            <label className="flex flex-col gap-2">
+              <h4>Date of Travel:</h4>
+              <Input type="date" {...register("date")} />
+              {errors.date && <ErrorLabel>{errors.date.message}</ErrorLabel>}
+            </label>
             <div className="flex flex-col gap-2">
               <h4>Age Range</h4>
               <div className="flex gap-5 items-center ">
-                <div className="">
+                <div className="flex-1">
                   <span className="flex items-center gap-5 flex-1">
                     <p>From</p>
                     <Select
@@ -152,7 +168,7 @@ export default function ContactForm() {
                     <ErrorLabel>{errors.fromAge.message}</ErrorLabel>
                   )}
                 </div>
-                <div className="">
+                <div className="flex-1">
                   <span className="flex items-center gap-5 flex-1">
                     <p>To</p>
                     <Select

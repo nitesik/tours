@@ -12,6 +12,8 @@ export async function POST(req: Request) {
       numberOfPeople: string;
       fromAge: string;
       toAge: string;
+      date: string;
+      budgetPerPerson: string;
     };
 
     const { data, error } = await resend.emails.send({
@@ -26,6 +28,8 @@ export async function POST(req: Request) {
 <p>Number of People: ${body.numberOfPeople}</p>
 <p>Age From: ${body.fromAge}</p>
 <p>Age To: ${body.toAge}</p>
+<p>Budget Per Person: ${body.budgetPerPerson}</p>
+<p>Date of Travel: ${body.date}</p>
 `,
     });
 

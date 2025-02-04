@@ -189,7 +189,7 @@ export default function HomePage() {
                       <img
                         src={image.url}
                         alt={"image"}
-                        className={"rounded w-full h-full"}
+                        className={"rounded w-full h-full object-cover"}
                       />
                     </div>
                   </CarouselItem>
@@ -318,9 +318,9 @@ export default function HomePage() {
               authentic and impactful Bhutanese experiences that truly connect
               with our clients.
             </p>
-            <Button>
-              <Link href={"/about-us"}>ABOUT US</Link>
-            </Button>
+            <Link href={"/about-us"} className="">
+              <Button className="w-full">ABOUT US</Button>
+            </Link>
           </span>
           <div>
             <img
