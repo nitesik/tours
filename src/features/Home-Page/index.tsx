@@ -53,7 +53,7 @@ export default function HomePage() {
         <div className="w-full 2xl:max-w-[1500px] mx-auto text-black flex flex-col lg:grid grid-cols-2 ">
           <div
             id={"1"}
-            className="flex capture items-center justify-center mx-5 lg:mx-0"
+            className="flex capture items-center justify-center mx-5 mb-5 md:mb-0 lg:mx-0"
           >
             <div
               className={`lg:w-[300px] w-full h-[250px] lg:h-[400px] overflow-hidden duration-500 rounded transition-all ${id.includes("1") ? "opacity-100 -translate-y-[35px]" : "opacity-0 translate-y-[35px]"} `}
@@ -281,18 +281,18 @@ export default function HomePage() {
         <div className="w-full 2xl:max-w-[1500px] mx-auto grid gap-10 lg:grid-cols-4 [&>div>img]:border [&>div>img]:border-primary [&>div]:flex [&>div]:flex-col [&>div]:justify-center [&>div]:gap-5">
           <div>
             <img
-              src={Images.imageThree}
+              src={Images.imageSix}
               id={"5"}
               className={`${id.includes("5") ? "translate-y-0 opacity-100" : "opacity-0 translate-y-[35px]"} capture transition-all duration-500`}
             />
           </div>
           <div>
             <img
-              src={Images.imageOne}
+              src={Images.imageSeven}
               className={`${id.includes("5") ? "translate-y-0 opacity-100" : "opacity-0 translate-y-[35px]"} transition-all duration-500`}
             />
             <img
-              src={Images.imageTwo}
+              src={Images.imageEight}
               className={`${id.includes("5") ? "translate-y-0 opacity-100" : "opacity-0 translate-y-[35px]"} transition-all duration-500`}
             />
           </div>
@@ -324,7 +324,7 @@ export default function HomePage() {
           </span>
           <div>
             <img
-              src={Images.imageFour}
+              src={Images.imageNine}
               id={"5"}
               className={`${id.includes("5") ? "translate-y-0 opacity-100" : "opacity-0 translate-y-[35px]"} capture transition-all duration-500`}
             />
