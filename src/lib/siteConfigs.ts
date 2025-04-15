@@ -38,3 +38,10 @@ export const jumpToContact = () => {
     .querySelector("#contact")
     ?.scrollIntoView({ behavior: "smooth", block: "start" });
 };
+
+export const jumpToItineraries = () => {
+  window.location.assign("/#itineraries");
+  // document
+  //   .querySelector("#itineraries")
+  //   ?.scrollIntoView({ behavior: "smooth", block: "start" });
+};

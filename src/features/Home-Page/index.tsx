@@ -13,6 +13,8 @@ import Autoplay from "embla-carousel-autoplay";
 import { jumpToContact, services } from "@/lib/siteConfigs";
 import ContactForm from "@/components/contactForm";
 import Link from "next/link";
+import { Items } from "@/lib/itineraries";
+import { SquareArrowOutUpRight } from "lucide-react";
 
 const options = {
   threshold: 0.35,
@@ -44,7 +46,7 @@ export default function HomePage() {
 
   return (
     <main className="h-fit flex-1">
-      <HeroComponent id={id} />
+      <HeroComponent id={id}/>
 
       <section
         id={"1"}
@@ -56,7 +58,7 @@ export default function HomePage() {
             className="flex capture items-center justify-center mx-5 mb-5 md:mb-0 lg:mx-0"
           >
             <div
-              className={`lg:w-[300px] w-full h-[250px] lg:h-[400px] overflow-hidden duration-500 rounded transition-all ${id.includes("1") ? "opacity-100 -translate-y-[35px]" : "opacity-0 translate-y-[35px]"} `}
+              className={`lg:w-[300px] w-full h-[250px]  lg:h-[400px] overflow-hidden duration-500 rounded transition-all ${id.includes("1") ? "opacity-100 -translate-y-[35px]" : "opacity-0 translate-y-[35px]"} `}
             >
               <img
                 src={Images.imageOne}
@@ -163,7 +165,7 @@ export default function HomePage() {
               lush valleys, Bhutan offers more than just scenic beauty; it
               invites you into a world where happiness is the measure of
               success, and nature is revered as sacred.
-              <br className="mb-3" />
+              <br className="mb-3"/>
               From the iconic Tiger’s Nest Monastery perched on the edge of a
               cliff to the tranquil valleys of Paro and Punakha, Bhutan is a
               destination like no other. Whether you seek spiritual
@@ -211,7 +213,8 @@ export default function HomePage() {
               />
             </div>
             <div className="flex items-center">
-              <h1 className="font-bold mt-5 lg:mt-0 text-[35px] text-center lg:text-[60px] font-bebas lg:text-end text-primary">
+              <h1
+                className="font-bold mt-5 lg:mt-0 text-[35px] text-center lg:text-[60px] font-bebas lg:text-end text-primary">
                 Wings To Himalayan Kingdom are true specialists in accessing the
                 wilderness. They know where to go and importantly, when to go
                 there. Highly recommended
@@ -258,7 +261,7 @@ export default function HomePage() {
           {services.map((datum, index) => (
             <div key={index} className={"flex flex-col items-center gap-7"}>
               <div className={"bg-primary p-10 rounded-full text-white"}>
-                <datum.Icon width={50} height={50} />
+                <datum.Icon width={50} height={50}/>
               </div>
               <div className={"text-center flex flex-col gap-3"}>
                 <span className="text-3xl font-bebas">
@@ -278,7 +281,8 @@ export default function HomePage() {
         id={"5"}
         className="h-fit capture px-5 text-background bg-background py-14"
       >
-        <div className="w-full 2xl:max-w-[1500px] mx-auto grid gap-10 lg:grid-cols-4 [&>div>img]:border [&>div>img]:border-primary [&>div]:flex [&>div]:flex-col [&>div]:justify-center [&>div]:gap-5">
+        <div
+          className="w-full 2xl:max-w-[1500px] mx-auto grid gap-10 lg:grid-cols-4 [&>div>img]:border [&>div>img]:border-primary [&>div]:flex [&>div]:flex-col [&>div]:justify-center [&>div]:gap-5">
           <div>
             <img
               src={Images.imageSix}
@@ -301,7 +305,7 @@ export default function HomePage() {
               {/*Why <span className="text-primary">Choose</span> <br /> Wings To*/}
               {/*Himalayan Kingdom?*/}
               Explore Bhutan with
-              <br />
+              <br/>
               <span className="text-primary">Wings to Himalayan Kingdom.</span>
             </h1>
             <p>
@@ -333,7 +337,7 @@ export default function HomePage() {
       </section>
 
       <section className="h-fit flex bg-muted  py-14">
-        <div className="customDiv" />
+        <div className="customDiv"/>
         <div
           id={"6"}
           className="flex-1 capture pl-5 grid md:grid-cols-2 gap-5 overflow-x-hidden"
@@ -375,7 +379,28 @@ export default function HomePage() {
         </div>
       </section>
 
-      <ContactForm />
+      <section
+        id={"5"}
+        className="h-fit capture px-5 text-background bg-background py-14"
+      >
+        <div
+          className="w-full 2xl:max-w-[1500px] mx-auto gap-10">
+          <h1 id={"itineraries"} className="text-primary text-[50px] font-bold font-bebas w-fit mx-auto">
+            ITINERARIES
+          </h1>
+          <div className="gap-5 mt-10 grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1">
+            {
+              Items.map((item, index) => (
+                <Link href={item.href} prefetch={false} key={index} target={"_blank"}
+                      className="border hover:bg-muted py-3 px-5 rounded border-primary text-primary w-full flex justify-between items-center">
+                  <p className="font-bold">{item.title}</p> <SquareArrowOutUpRight/></Link>
+              ))
+            }
+          </div>
+        </div>
+      </section>
+
+      <ContactForm/>
     </main>
   );
 }

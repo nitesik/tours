@@ -7,10 +7,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 @layer base {
     :root {
         --background: 0 0% 100%;
@@ -90,6 +86,10 @@ body {
     .customDiv {
         width: calc((100vw - 1500px) / 2);
     }
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .scroller {
