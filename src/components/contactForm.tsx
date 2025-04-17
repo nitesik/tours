@@ -98,7 +98,8 @@ export default function ContactForm() {
           className="mx-auto w-full lg:w-[800px] gap-8 flex flex-col items-center"
         >
           <h1 className="text-[50px] font-bebas text-primary">Contact Us!</h1>
-          <div className="grid lg:grid-cols-2 gap-5 font-sans w-full [&>label>input]:rounded-none [&>*>h4]:text-primary [&>*>h4]:font-semibold [&>*>h4]:text-lg ">
+          <div
+            className="grid lg:grid-cols-2 gap-5  font-sans w-full [&>label>input]:rounded-none [&>*>h4]:text-primary [&>*>h4]:font-semibold [&>*>h4]:text-lg ">
             <label className="flex flex-col gap-2">
               <h4>Name:</h4>
               <Input {...register("name")} />
@@ -153,7 +154,7 @@ export default function ContactForm() {
                       onValueChange={(e) => e && setValue("fromAge", e)}
                     >
                       <SelectTrigger className="flex-1">
-                        <SelectValue placeholder="Age" />
+                        <SelectValue placeholder="Age"/>
                       </SelectTrigger>
                       <SelectContent>
                         {new Array(99).fill(0).map((_, i) => (
@@ -176,7 +177,7 @@ export default function ContactForm() {
                       onValueChange={(e) => e && setValue("toAge", e)}
                     >
                       <SelectTrigger className="flex-1">
-                        <SelectValue placeholder="Age" />
+                        <SelectValue placeholder="Age"/>
                       </SelectTrigger>
                       <SelectContent>
                         {new Array(99).fill(0).map((_, i) => (
@@ -196,7 +197,7 @@ export default function ContactForm() {
           </div>
           {error && <ErrorLabel>{error.message}</ErrorLabel>}
           <Button disabled={isPending} className="w-full">
-            {isPending ? <Loader2 className="animate-spin" /> : "Submit"}
+            {isPending ? <Loader2 className="animate-spin"/> : "Submit"}
           </Button>
         </form>
       </div>

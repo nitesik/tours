@@ -23,7 +23,7 @@ const options = {
 } satisfies IntersectionObserverInit;
 
 export default function HomePage() {
-  const [id, setId] = useState<string[]>([]);
+  const [id, setId] = useState<string[]>(["1"]);
 
   const callback = useCallback((entries: IntersectionObserverEntry[]) => {
     entries.forEach((entry) => {

@@ -4,7 +4,7 @@ export const Images = {
   imageOne:
     "https://res.cloudinary.com/dqlrcrire/image/upload/v1743499196/cc393489-4032-4c52-83a8-9f56f4e19c75_hhijpa.jpg",
   imageTwo:
-    "https://res.cloudinary.com/dqlrcrire/image/upload/v1738559291/IMG_0041_esew3a.jpg",
+    "https://res.cloudinary.com/dqlrcrire/image/upload/v1744881012/06593772-0901-45e4-bfce-73f3e2e79864_ipplv8.jpg",
   imageThree:
     "https://res.cloudinary.com/dqlrcrire/image/upload/v1738559297/IMG_0164_iwfufu.jpg",
   imageFour:
@@ -33,6 +33,11 @@ export const CarouselImages = [
     description: "",
   },
   {
+    url: "https://res.cloudinary.com/dqlrcrire/image/upload/v1744881063/46aa734f-fe6c-49a4-8ffc-c23fe5e7182c_hlhgzx.jpg",
+    title: "",
+    description: "",
+  },
+  {
     url: "https://images.unsplash.com/photo-1580649851649-992b28f56e98?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "",
     description: "",
@@ -44,12 +49,22 @@ export const CarouselImages = [
   },
 
   {
+    url: "https://res.cloudinary.com/dqlrcrire/image/upload/v1744881049/c7c18075-2d0d-4c03-ac58-5edf510871eb_l8bguh.jpg",
+    title: "",
+    description: "",
+  },
+  {
     url: "https://images.unsplash.com/photo-1606239763574-c53f4fe09af9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fGJodXRhbnxlbnwwfHwwfHx8MA%3D%3D",
     title: "",
     description: "",
   },
   {
     url: "https://images.unsplash.com/photo-1576596218485-5af9272c4a97?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzB8fGJodXRhbnxlbnwwfHwwfHx8MA%3D%3D",
+    title: "",
+    description: "",
+  },
+  {
+    url: "https://res.cloudinary.com/dqlrcrire/image/upload/v1744881012/06593772-0901-45e4-bfce-73f3e2e79864_ipplv8.jpg",
     title: "",
     description: "",
   },
