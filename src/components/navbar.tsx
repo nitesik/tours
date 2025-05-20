@@ -9,11 +9,11 @@ import Image from "next/image";
 import { jumpToContact, jumpToItineraries } from "@/lib/siteConfigs";
 
 export default function Navbar() {
-  const [yPos, setYPos] = useState(0);
+  const [yPos, setYPos] = useState(false);
   const [toggleNavbar, setToggleNavbar] = useState(false);
 
   const setYPosition = useCallback(() => {
-    setYPos(window.scrollY);
+    setYPos(window.scrollY > 50);
   }, []);
 
   useEffect(() => {
@@ -26,7 +26,7 @@ export default function Navbar() {
   return (
     <nav
       className={`p-5 ${
-        yPos > 50
+        yPos
           ? "sticky top-0 bg-background border-primary"
           : "border-transparent bg-background py-8"
       } transition-all text-primary duration-500 z-50 border-b`}
